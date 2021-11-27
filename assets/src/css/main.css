@@ -160,11 +160,7 @@ h6 {
 
 /* =========== Header =========== */
 .header {
-  background: linear-gradient(
-    top to bottom,
-    var(--color-fade-green) 80%,
-    var(--color-white) 20%
-  );
+  background-image: linear-gradient(var(--color-header-bg), var(--color-white));
   margin-bottom: 12rem;
   position: relative;
 }
@@ -358,6 +354,48 @@ h6 {
   align-items: center;
 }
 
+/* ========= Our Stars Styling ========== */
+.our-stars {
+  padding-block: 10rem;
+}
+.our-stars-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-stars-text {
+  max-width: 54rem;
+}
+.our-stars-text > h6 {
+  margin-bottom: 2rem;
+}
+.our-stars-text > h2 {
+  margin-bottom: 5rem;
+}
+.our-star-product-info {
+  margin-bottom: 5rem;
+}
+.our-star-product-info {
+  display: flex;
+  justify-content: space-between;
+}
+.our-star-product-info-items {
+  text-align: center;
+}
+.our-star-product-info-items > h4 {
+  margin-bottom: 1.6rem;
+  color: var(--color-green);
+}
+.our-stars-text .btn-text {
+  color: var(--color-white);
+}
+.our-stars-text .btn-text > svg {
+  margin-left: 2.2rem;
+}
+.our-stars-img {
+  padding: 0 4.8rem 9.4rem 4.8rem;
+  background-color: var(--color-fade-green);
+}
 /* =========== Media Queries ============ */
 
 /* Media queries for Tablet */
@@ -432,6 +470,11 @@ h6 {
   }
   .benefits-text h2 {
     margin-bottom: 3.4rem;
+  }
+
+  /* .our-stars */
+  .our-stars-contents {
+    gap: 4rem;
   }
 }
 
@@ -510,7 +553,7 @@ h6 {
 
   /* .benefits */
   .benefits {
-    padding: 6.2rem 0 6.2rem 0;
+    padding: 6.2rem 2rem 6.2rem 2rem;
   }
   .benefits-content {
     flex-direction: column;
@@ -519,6 +562,17 @@ h6 {
     padding: 0 2.8rem 4.4rem 2.8rem;
   }
   .benefits-check-items {
-    padding: 0 6rem;
+    padding: 0 4rem;
+  }
+
+  /* .our-stars */
+  .our-stars {
+    padding: 5rem 2rem;
+  }
+  .our-stars-contents {
+    flex-direction: column-reverse;
+  }
+  .our-stars-img {
+    padding: 0 2.8rem 4.4rem 2.8rem;
   }
 }
