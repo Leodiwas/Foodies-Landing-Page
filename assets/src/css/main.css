@@ -686,7 +686,8 @@ h2 {
   .our-features-contents-img {
     padding: 0 2rem;
   }
-  .our-features-contents-text {
+  .our-features-contents-text,
+  .our-features-contents-text .logo-text {
     align-items: flex-start;
   }
 }
