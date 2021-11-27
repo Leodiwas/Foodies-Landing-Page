@@ -571,6 +571,7 @@ h6 {
   }
   .our-stars-contents {
     flex-direction: column-reverse;
+    gap: 4rem;
   }
   .our-stars-img {
     padding: 0 2.8rem 4.4rem 2.8rem;
