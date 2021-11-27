@@ -435,16 +435,13 @@ h6 {
     max-width: 9ch;
     margin: auto;
   }
-  .hero-img-item-1,
-  .hero-img-item-2 {
-    left: 40%;
-    transform: translateX(-40%);
-  }
   .hero-img-item-1 {
     top: 45rem;
+    left: 9rem;
   }
   .hero-img-item-2 {
     top: 52rem;
+    right: 10.5rem;
   }
   .hero-brand-logos {
     bottom: -20rem;
