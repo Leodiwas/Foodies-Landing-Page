@@ -437,8 +437,8 @@ h6 {
   }
   .hero-img-item-1,
   .hero-img-item-2 {
-    left: 45%;
-    transform: translateX(-45%);
+    left: 40%;
+    transform: translateX(-40%);
   }
   .hero-img-item-1 {
     top: 45rem;
