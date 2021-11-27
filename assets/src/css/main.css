@@ -553,7 +553,7 @@ h6 {
 
   /* .benefits */
   .benefits {
-    padding: 6.2rem 2rem 6.2rem 2rem;
+    padding: 6.2rem 1rem 6.2rem 1rem;
   }
   .benefits-content {
     flex-direction: column;
@@ -567,7 +567,7 @@ h6 {
 
   /* .our-stars */
   .our-stars {
-    padding: 5rem 2rem;
+    padding: 5rem 1rem;
   }
   .our-stars-contents {
     flex-direction: column-reverse;
