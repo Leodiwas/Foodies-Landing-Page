@@ -879,13 +879,17 @@ h6 {
     padding: 0 2.8rem 4.4rem 2.8rem;
     margin-bottom: 4rem;
   }
+  .our-star-product-info {
+    flex-direction: column;
+    gap: 4rem;
+  }
 
   /* .our-features- */
   .our-features {
     padding-block: 4.2rem;
   }
   .our-features-title h6,
-  h2 {
+  .our-features-title h2 {
     text-align: center;
   }
   .our-features-contents {
