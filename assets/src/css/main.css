@@ -78,7 +78,9 @@ h5,
 h6,
 .btn-text,
 .nav-text,
-.logo-text {
+.logo-text,
+.para-large,
+.footer-links-title {
   color: var(--primary-text);
   font-style: normal;
 }
@@ -137,6 +139,11 @@ h6 {
   font-weight: 500;
   font-size: 3.2rem;
   line-height: 3.8rem;
+}
+.footer-links-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3rem;
 }
 
 /* ============== Btns ============ */
@@ -415,7 +422,7 @@ h6 {
   padding-block: 10rem;
 }
 .our-features-title h6,
-h2 {
+.our-features h2 {
   text-align: center;
 }
 .our-features-title h6 {
@@ -578,6 +585,75 @@ h2 {
   margin-left: 2rem;
 }
 
+/* ============ Footer Styling =============== */
+.footer {
+  padding-block: 10rem;
+}
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-info {
+  max-width: 30rem;
+}
+.footer-info-social-links ul {
+  display: flex;
+  gap: 2.6rem;
+}
+.footer-info-social-links i {
+  font-size: 2.6rem;
+  color: var(--primary-text);
+}
+.footer-info-social-links i:hover {
+  color: var(--color-green);
+  transition: all 0.5s ease;
+}
+.footer-info > .footer-info-title,
+.footer-links > .footer-links-title,
+.footer-git > .footer-links-title {
+  margin-bottom: 4rem;
+}
+.footer-info .para-large {
+  margin-bottom: 5rem;
+}
+.footer-links ul {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+.footer-links ul li > a:hover {
+  color: var(--color-green);
+  transition: all 0.5s ease;
+}
+.footer-git {
+  max-width: 37rem;
+}
+.footer-git .para-large {
+  margin-bottom: 3.8rem;
+}
+.footer-git-form {
+  display: flex;
+  gap: 1.4rem;
+}
+.footer-git-form input {
+  outline: none;
+  border: none;
+  background: var(--color-gray);
+  height: 6rem;
+  padding: 0 2.4rem;
+}
+.footer-git-form .btn-primary {
+  padding: 2rem 3rem;
+  color: var(--color-white);
+}
+
+/* ========== Copy Right ========== */
+.copyright {
+  text-align: center;
+  padding: 3.8rem 0;
+}
+
 /* =========== Media Queries ============ */
 
 /* Media queries for Tablet */
@@ -656,7 +732,7 @@ h2 {
 
   /* .our-stars */
   .our-features-title h6,
-  h2 {
+  .our-features h2 {
     text-align: start;
   }
   .our-stars-contents {
@@ -688,6 +764,19 @@ h2 {
   }
   .v-foods-text {
     width: 66%;
+  }
+
+  /* .footer */
+  .footer {
+    padding-block: 5rem;
+  }
+  .footer-contents {
+    gap: 6rem;
+    padding: 0 2rem;
+  }
+  .footer-git {
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -847,5 +936,22 @@ h2 {
   }
   .v-foods-text {
     width: 90%;
+  }
+
+  /* .footer */
+  .footer-contents {
+    padding: 0;
+  }
+  .footer-info {
+    margin: auto;
+  }
+  .footer-info-social-links ul {
+    justify-content: center;
+  }
+  .footer-links {
+    padding: 0 2rem;
+  }
+  .footer-git-form {
+    flex-direction: column;
   }
 }
