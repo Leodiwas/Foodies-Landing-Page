@@ -412,7 +412,7 @@ h6 {
 
 /* ============ Our Features ============ */
 .our-features {
-  padding-block: 9.2rem;
+  padding-block: 10rem;
 }
 .our-features-title h6,
 h2 {
@@ -426,8 +426,8 @@ h2 {
 }
 .our-features-contents {
   display: grid;
-  grid-template-columns: repeat(4, 30rem);
-  grid-template-rows: repeat(2, 30rem);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "one two three four"
     "five six seven eight";
@@ -546,6 +546,38 @@ h2 {
   margin-left: 3rem;
 }
 
+/* ============ V Foods Styling ============ */
+.v-foods {
+  padding-block: 10rem;
+}
+.v-foods img {
+  width: 100%;
+}
+.v-foods-contents {
+  position: relative;
+  height: 50rem;
+  background: url(../images/veggie-food-img.png) no-repeat center center / cover;
+}
+.v-foods-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+}
+.v-foods-text h2,
+.v-foods-text .btn-text {
+  color: var(--color-white);
+  text-align: center;
+}
+.v-foods-text h2 {
+  margin-bottom: 3.8rem;
+}
+.v-foods-text .btn-text > svg {
+  margin-left: 2rem;
+}
+
 /* =========== Media Queries ============ */
 
 /* Media queries for Tablet */
@@ -648,6 +680,14 @@ h2 {
     grid-template-areas:
       "card-1 card-2"
       "card-3 card-4";
+  }
+
+  /* V-foods */
+  .v-foods-contents {
+    height: 40rem;
+  }
+  .v-foods-text {
+    width: 66%;
   }
 }
 
@@ -778,7 +818,7 @@ h2 {
   }
   .our-features-contents-text,
   .our-features-contents-text .logo-text {
-    align-items: flex-start;
+    align-items: center;
   }
 
   /* .products-card */
@@ -796,5 +836,16 @@ h2 {
       "card-2"
       "card-3"
       "card-4";
+  }
+
+  /* .v-foods */
+  .v-foods {
+    padding-block: 5rem;
+  }
+  .v-foods-contents {
+    height: 40rem;
+  }
+  .v-foods-text {
+    width: 90%;
   }
 }
